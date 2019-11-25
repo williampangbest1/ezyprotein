@@ -5,7 +5,7 @@ import json
 app = flask.Flask(__name__)
 
 app.route("/")
-def myIndex():
+def myhome():
 	return flask.render_template("home.html")
 
 @app.route("/home")
