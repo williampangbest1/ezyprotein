@@ -4,7 +4,11 @@ import json
 
 app = flask.Flask(__name__)
 
-@app.route("/")
+app.route("/")
+def myIndex():
+	return flask.render_template("home.html")
+
+@app.route("/home")
 def myIndex():
 	return flask.render_template("index.html")
 
