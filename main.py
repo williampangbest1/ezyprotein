@@ -28,4 +28,5 @@ def search():
 	#return flask.render_template("index.html", result=json.dumps(result))
 	return json.dumps(a)
 
-app.run(debug=True)
+if __name__ == "__main__":
+	app.run(debug=True)
