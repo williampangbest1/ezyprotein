@@ -2,7 +2,7 @@ import flask
 from pair_search import pair_search,pairs_search 
 import json
 
-main = flask.Flask(__name__)
+app = flask.Flask(__name__)
 
 @app.route("/")
 def myhome():
@@ -28,5 +28,4 @@ def search():
 	#return flask.render_template("index.html", result=json.dumps(result))
 	return json.dumps(a)
 
-if __name__ == "__main__":
-	app.run(debug=True)
+app.run(debug=True)
