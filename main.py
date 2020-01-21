@@ -2,7 +2,7 @@ import flask
 from pair_search import pair_search,pairs_search 
 import json
 
-app = flask.Flask(__name__)
+main = flask.Flask(__name__)
 
 @app.route("/")
 def myhome():
